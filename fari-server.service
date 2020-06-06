@@ -1,0 +1,10 @@
+[Unit]
+Description=Fari-Server
+
+[Service]
+TimeoutStartSec=0
+ExecStart=/root/proxy/fari-server -c /root/proxy/.server.json
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

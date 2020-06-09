@@ -27,7 +27,7 @@ func main() {
 	}
 
 	var forceIP, forceURL []string
-	url, _ := config["url"].([]interface{})
+	url, _ := config["proxy_url"].([]interface{})
 
 	for _, url := range url {
 		forceURL = append(forceURL, url.(string))
